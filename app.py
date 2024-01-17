@@ -4,12 +4,10 @@ from PIL import Image
 from torchvision import transforms
 import timm
 
-
 # Load and display logo
 logo_path = 'C:\\Lung Cancer Detection\\Assets\\setv_global_cover.jpeg'  # Using a raw string literal
 logo = Image.open(logo_path)
 st.image(logo, width=200)
-
 
 # Define the model architecture
 def create_model():
@@ -28,6 +26,8 @@ def create_model():
         torch.nn.Softmax(dim=1)
     )
     return model
+
+
 
 # Load the saved model
 @st.cache(allow_output_mutation=True)
