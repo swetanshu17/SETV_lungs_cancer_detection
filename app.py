@@ -4,9 +4,17 @@ import torchvision
 from PIL import Image
 from torchvision import transforms
 import timm
+import os
 
 # Load and display logo
-logo_path = 'C:\\Lung Cancer Detection\\Assets\\setv_global_cover.jpeg'  # Using a raw string literal
+# Get the current directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Specify the relative path to the logo image
+logo_filename = 'setv_global_cover.jpeg'
+logo_path = os.path.join("assets","setv_global_cover.jpeg")
+
+# Load and display the logo image
 logo = Image.open(logo_path)
 st.image(logo, width=200)
 
