@@ -1,5 +1,0 @@
-torch
-torchvision
-timm==0.4.12  
-streamlit==1.2.0  
-pillow==8.3.1  

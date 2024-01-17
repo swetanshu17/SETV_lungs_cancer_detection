@@ -1,5 +1,6 @@
 import streamlit as st
 import torch
+import torchvision
 from PIL import Image
 from torchvision import transforms
 import timm
