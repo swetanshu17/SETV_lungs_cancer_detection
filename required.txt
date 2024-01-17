@@ -2,4 +2,4 @@ streamlit
 torch
 torchvision
 Pillow
-timm  # If you are using models from the TIMM library
+timm  
