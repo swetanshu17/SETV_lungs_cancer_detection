@@ -42,9 +42,12 @@ def create_model():
 @st.cache(allow_output_mutation=True)
 def load_model(model_path):
     model = create_model()
+    # Use os.path.join to ensure the correct path separator
+    model_path = os.path.join("Model", "model_ResNet50_best.h5")  # Update the model path
     model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     model.eval()
     return model
+
 
 model = load_model('C:\Lung Cancer Detection\Model\model_ResNet50_best.h5')  # Update path
 
