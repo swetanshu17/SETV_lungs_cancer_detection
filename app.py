@@ -72,7 +72,7 @@ def predict(image, model):
 class_name = ['adenocarcinoma', 'large.cell.carcinoma', 'normal', 'squamous.cell.carcinoma']
 
 # Streamlit UI
-st.title("SETV Lung Cancer Detection")
+st.title("SETV Pulmonary Oncology Diagnosis V.2.0 ")
 st.write("Upload a CT Scan image for lung cancer detection.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg", "webp"])
